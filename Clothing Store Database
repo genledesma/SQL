@@ -1,0 +1,15 @@
+--Create a clothing store database
+
+CREATE TABLE boutique (id INTEGER, catagory TEXT, Price INTEGER, quantity INTEGER);
+
+INSERT INTO boutique VALUES (111, "tops", 6.00,10);
+INSERT INTO boutique VALUES (112, "dresses",15.00, 10);
+INSERT INTO boutique VALUES (113, "skirts", 8.00, 10);
+INSERT INTO boutique VALUES (114, "pants", 10.00, 10);
+INSERT INTO boutique VALUES (115, "shorts",5.00, 10);
+
+--display the database orderd by price
+SELECT * FROM boutique WHERE price ORDER BY price;
+
+--how many items are in total are in stock
+SELECT sum(quantity) FROM boutique;
